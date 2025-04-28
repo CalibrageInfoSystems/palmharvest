@@ -1,0 +1,157 @@
+<resources>
+    <string name="app_name">3F Harvesting</string>
+
+    <string name="tap_text">Please Select Language Below:</string>
+    <string name="btn_en">English</string>
+    <string name="btn_te">తెలుగు</string>
+    <string name="FA_login">Login</string>
+    <string name="user_name">Username</string>
+    <string name="password">Password</string>
+    <string name="err_please_enter_username">Please Enter Username</string>
+    <string name="err_please_enter_password">Please Enter Password</string>
+    <string name="Invalid_user">Username is Wrong , Please Try Again</string>
+    <string name="login">Login</string>
+    <string name="Internet">Please Check Internet Connection</string>
+    <string name="error">Error</string>
+    <string name="ok">OK</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="requests">Requests</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="chooselanguage">Choose Language</string>
+    <string name="choose_language_str">Choose Language</string>
+    <string name="telugu_str">Telugu</string>
+    <string name="log_off">Logout</string>
+    <string name="english_str">English</string>
+
+    <string name="confirmation">Confirmation</string>
+    <string name="alert_logout">Are you sure you want to Logout?</string>
+    <string name="cancel">Cancel</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="pleasewait">Please Wait..</string>
+    <string name="downloadvideo">Downloading Video ...</string>
+    <string name="allDataUpdated">All Data is Updated</string>
+    <string name="loading">Loading...</string>
+    <string name="progressDailog">ProgressDialog...</string>
+    <string name="submitRequest">Submit Request</string>
+    <string name="requestId">Request Id</string>
+    <string name="farmerCode">Farmer Code</string>
+    <string name="farmerName">Farmer Name</string>
+    <string name="plotCode">Plot Code</string>
+    <string name="pin">Pin</string>
+    <string name="jobDoneDate">Job Done Date </string>
+    <string name="tressCountforHarvesting">Tress Count for Harvesting</string>
+    <string name="save">  Submit  </string>
+    <string name="helloWorld">Hello World!</string>
+    <string name="sync">Sync</string>
+    <string name="clearAllData">Reset All Data</string>
+    <string name="syncData">Sync Data</string>
+    <string name="masterSync">Master Sync :</string>
+    <string name="forwardSync">Forward Sync :</string>
+    <string name="reverseSync">Reverse Sync :</string>
+    <string name="lastSync">Last Sync</string>
+    <string name="pendingSync">Pending Sync from Server</string>
+    <string name="frwdSync">Forward Sync</string>
+    <string name="requestHeader">RequestHeader</string>
+    <string name="rvrseSync">Reverse sync</string>
+    <string name="scrollLeft">Scroll Left</string>
+    <string name="scrollRight">Scroll Right</string>
+    <string name="email">Email</string>
+    <string name="mobileNumber">Mobile Number</string>
+    <string name="contactNumber">Contact Number</string>
+    <string name="managerName">Manager Name</string>
+    <string name="selectTimePeriod">Select Time Period</string>
+    <string name="fromDate">From Date</string>
+    <string name="toDate">To Date</string>
+    <string name="submit">  SUBMIT  </string>
+    <string name="id">ID</string>
+    <string name="requestCode">Request Code</string>
+    <string name="startDate">Preferred Date</string>
+    <string name="duarationId">Duration Id</string>
+    <string name="leaderId">Leader Id</string>
+    <string name="PIN">Pin</string>
+    <string name="jobDD">Job Done Date</string>
+    <string name="createdByUserId">Created By User Id</string>
+    <string name="createdDate">Created Date</string>
+    <string name="updatedByUserId">Updated By User Id</string>
+    <string name="updatedDate">Updated Date</string>
+    <string name="assignedDate">Assigned Date</string>
+    <string name="netWeight">Net Weight</string>
+    <string name="amount">Amount</string>
+    <string name="harvestingAmount">Harvesting Amount</string>
+    <string name="pruningAmount">Pruning Amount</string>
+    <string name="unknown1Amount">Unknown1 Amount</string>
+    <string name="unknown2Amount">Unknown2 Amount</string>
+
+    <string name="treeCount">Trees Count</string>
+
+    <string name="treeCountwithintercrop">Trees Count with intercrop</string>
+    <string name="serverStatus">Server Updated Status</string>
+    <string name="jobDone">  Job Done  </string>
+    <string name="viewOnMap"> View On Map </string>
+    <string name="viewDetails"> View Details </string>
+    <string name="lstSync">Last Sync:</string>
+    <string name="dateTime">Date Time</string>
+    <string name="startSync">  Start Sync  </string>
+    <string name="search">Search</string>
+    <string name="details">Details</string>
+    <string name="enter_Date">Please Enter From Date and To Date</string>
+    <string name="location">Location on Map</string>
+    <string name="alert_sync">Are you sure you want  Clear the Data ?</string>
+    <string name="noDataAvailable">No Requests Assigned on this Day</string>
+    <string name="farmerMobileNumber">Farmer Mobile Number</string>
+    <string name="farmerContactNumber">Farmer Contact Number</string>
+    <string name="palmArea">Palm Area</string>
+    <string name="yearofPlanting">Year of Planting</string>
+    <string name="plotVillage">Plot village</string>
+    <string name="landmark">Landmark</string>
+    <string name="serviceTypes">Service Type(s)</string>
+    <string name="close">Close</string>
+    <string name="entervalidDates">From date should be less than To date</string>
+    <string name="otp_desc">Enter the 6 Digits Code Sent your Registered Mobile Number(s)</string>
+    <string name="ente_pin">Please Enter OTP</string>
+    <string name="name">Name</string>
+    <string name="syncWarning">Please do not close app when sync is in Progress</string>
+    <string name="showSyncInfo">Show Sync Information</string>
+    <string name="totalRequests">Total Requests</string>
+    <string name="pending">Pending</string>
+    <string name="enterPin">Enter Pin</string>
+    <string name="entervalidPin">Please Enter valid Pin</string>
+    <string name="selectDates">Please Select Date</string>
+    <string name="jobDoneDategreaterthanAssignedDate">JobDone Date must be greater than or equal to Assigned Date</string>
+    <string name="recordupdatestatus">Request Updated Successfully</string>
+    <string name="tressCount">tree count not empty and must greater than 0</string>
+
+    <string name="str_pin_1">Pin<font color="#ff0000">
+<bold>*</bold></font> </string>
+
+    <string name="str_jobdoneDate">Job Done Date<font color="#ff0000">
+<bold>*</bold></font></string>
+
+    <string name="bunch_count">Expected Bunches<font color="#ff0000">
+<bold>*</bold></font> </string>
+    <string name="Weight">Weight (Kg)<font color="#ff0000">
+<bold>*</bold></font> </string>
+
+    <string name="enter_bunch">Enter Expected Bunches</string>
+    <string name="enter_weight">Enter Weight</string>
+    <string name="entertrees">Enter Trees Count</string>
+    <string name="totaltreeCount">Total Trees Count<font color="#ff0000">
+<bold>*</bold></font></string>
+
+
+    <string name="Labours">Labours</string>
+    <string name="rollname">Role Name</string>
+    <string name="Cluster_name">Cluster Name</string>
+    <string name="expected_bunches">Expected Bunches</string>
+    <string name="bunch_countt">Bunches Count</string>
+    <string name="weight">Weight</string>
+    <string name="updated_data">All Data Updated</string>
+    <string name="reset_data">Please Reset All Data</string>
+    <string name="All_updated">All Are Updated</string>
+    <string name="version" >Database Version : 1.0</string>
+    <string name="App_version">App Version : </string>
+</resources>

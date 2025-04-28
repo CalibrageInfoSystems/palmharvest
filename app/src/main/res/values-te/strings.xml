@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">3F Harvesting</string>
+    <string name="tap_text">దిగువ ఏదైనా భాషను ఎంచుకోండి:</string>
+    <string name="btn_en">English</string>
+    <string name="btn_te">తెలుగు</string>
+    <string name="FA_login">లాగిన్</string>
+    <string name="user_name">వినియోగదారు పేరు</string>
+    <string name="password">పాస్వర్డ్</string>
+    <string name="err_please_enter_username">దయచేసి వినియోగదారు పేరును నమోదు చేయండి</string>
+    <string name="err_please_enter_password">దయచేసి పాస్‌వర్డ్‌ను నమోదు చేయండి</string>
+    <string name="Invalid_user">వినియోగదారు పేరు తప్పు, దయచేసి మళ్ళీ ప్రయత్నించండి</string>
+    <string name="login">లాగిన్</string>
+    <string name="Internet">దయచేసి ఇంటర్నెట్ కనెక్షన్‌ను తనిఖీ చేయండి</string>
+    <string name="error">లోపం</string>
+    <string name="ok">సరే</string>
+    <string name="home">హోమ్</string>
+    <string name="profile">ప్రొఫైల్</string>
+    <string name="requests">అభ్యర్థనలు</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="chooselanguage">భాషను ఎంచుకోండి</string>
+    <string name="choose_language_str">భాషను ఎంచుకోండి</string>
+    <string name="telugu_str">తెలుగు</string>
+    <string name="log_off">లాగ్అవుట్</string>
+    <string name="english_str">English</string>
+
+    <string name="confirmation">నిర్ధారణ</string>
+    <string name="alert_logout">మీరు లాగ్ అవుట్ చేయాలనుకుంటున్నారా?</string>
+    <string name="cancel">రద్దు చేయండి</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pleasewait">దయచేసి వేచి ఉండండి ..</string>
+    <string name="downloadvideo">వీడియోను డౌన్‌లోడ్ చేస్తోంది ...</string>
+    <string name="allDataUpdated">మొత్తం డేటా నవీకరించబడింది</string>
+    <string name="loading">లోడ్...</string>
+    <string name="progressDailog">ప్రోగ్రెస్డైలాగ్...</string>
+    <string name="submitRequest">అభ్యర్థనను సమర్పించండి</string>
+    <string name="requestId">ఐడిని అభ్యర్థించండి</string>
+    <string name="farmerCode">రైతు కోడ్</string>
+    <string name="farmerName">రైతు పేరు</string>
+    <string name="plotCode">ప్లాట్ కోడ్</string>
+    <string name="pin">పిన్*</string>
+    <string name="jobDoneDate">ఉద్యోగం పూర్తయిన తేదీ*</string>
+    <string name="tressCountforHarvesting">హార్వెస్టింగ్ కోసం ట్రెస్ కౌంట్</string>
+    <string name="save">  సేవ్  </string>
+    <string name="helloWorld">హలో వరల్డ్!</string>
+    <string name="sync">సమకాలీకరణ</string>
+    <string name="clearAllData">మొత్తం డేటాను క్లియర్ చేయండి</string>
+    <string name="syncData">డేటాను సమకాలీకరించండి</string>
+    <string name="masterSync">మాస్టర్ సమకాలీకరణ:</string>
+    <string name="forwardSync">ఫార్వర్డ్ సమకాలీకరణ:</string>
+    <string name="reverseSync">రివర్స్ సమకాలీకరణ:</string>
+    <string name="lastSync">చివరి సమకాలీకరణ</string>
+    <string name="pendingSync">సర్వర్ నుండి సమకాలీకరణ పెండింగ్‌లో ఉంది</string>
+    <string name="frwdSync">ఫార్వర్డ్ సమకాలీకరణ</string>
+    <string name="requestHeader">అభ్యర్థనశీర్షిక</string>
+    <string name="rvrseSync">రివర్స్ సమకాలీకరణ</string>
+    <string name="scrollLeft">ఎడమవైపు స్క్రోల్ చేయండి</string>
+    <string name="scrollRight">కుడివైపు స్క్రోల్ చేయండి</string>
+    <string name="email">ఇమెయిల్</string>
+    <string name="mobileNumber">మొబైల్ సంఖ్య</string>
+    <string name="contactNumber">సంప్రదింపు సంఖ్య</string>
+    <string name="managerName">మేనేజర్ పేరు</string>
+    <string name="selectTimePeriod">సమయ వ్యవధిని ఎంచుకోండి</string>
+    <string name="fromDate">తేదీ నుంచి*</string>
+    <string name="toDate">తేదీ వరకు *</string>
+    <string name="submit">  సమర్పించు  </string>
+    <string name="id">ఐడి</string>
+    <string name="requestCode">అభ్యర్థన కోడ్</string>
+    <string name="startDate">ప్రారంబపు తేది</string>
+    <string name="duarationId">వ్యవధి ఐడి</string>
+    <string name="leaderId">లీడర్ ఐడి</string>
+    <string name="PIN">పిన్</string>
+    <string name="jobDD">ఉద్యోగం పూర్తయిన తేదీ</string>
+    <string name="createdByUserId">యూజర్ ఐడి చేత సృష్టించబడింది</string>
+    <string name="createdDate">సృష్టించిన తేదీ</string>
+    <string name="updatedByUserId">యూజర్ ఐడి ద్వారా నవీకరించబడింది</string>
+    <string name="updatedDate">నవీకరించబడిన తేదీ</string>
+    <string name="assignedDate">కేటాయించిన తేదీ</string>
+    <string name="netWeight">నికర బరువు</string>
+    <string name="amount">మొత్తం</string>
+    <string name="harvestingAmount">హార్వెస్టింగ్ మొత్తం</string>
+    <string name="pruningAmount">కత్తిరింపు మొత్తం</string>
+    <string name="unknown1Amount">తెలియని 1 మొత్తం</string>
+    <string name="unknown2Amount">తెలియని 2 మొత్తం</string>
+    <string name="treeCount">చెట్ల సంఖ్య</string>
+    <string name="treeCountwithintercrop">చెట్లు సంఖ్య అంతర పంటలతో</string>
+    <string name="serverStatus">సర్వర్ నవీకరించబడిన స్థితి</string>
+    <string name="jobDone">  ఉద్యోగం పూర్తయింది  </string>
+    <string name="viewOnMap"> మ్యాప్‌లో చూడండి </string>
+    <string name="viewDetails"> వివరాలను చూడండి </string>
+    <string name="lstSync">చివరి సమకాలీకరణ:</string>
+    <string name="dateTime">తేదీ సమయం</string>
+    <string name="startSync">  సమకాలీకరణను ప్రారంభించండి  </string>
+    <string name="search">శోధన</string>
+    <string name="details">వివరాలు</string>
+    <string name="enter_Date">దయచేసి తేదీ నుండి మరియు తేది వరకు నమోదు చేయండి</string>
+    <string name="location">మ్యాప్‌లో స్థానం</string>
+    <string name="alert_sync">మీరు ఖచ్చితంగా డేటాను క్లియర్ చేయాలనుకుంటున్నారా??</string>
+    <string name="noDataAvailable">ఈ రోజున ఎటువంటి అభ్యర్థనలు కేటాయించబడలేదు</string>
+    <string name="farmerMobileNumber">రైతు మొబైల్ నంబర్</string>
+    <string name="farmerContactNumber">రైతు సంప్రదింపు సంఖ్య</string>
+    <string name="palmArea">పామ్ ప్రాంతం</string>
+    <string name="yearofPlanting">నాటిన సంవత్సరం</string>
+    <string name="plotVillage">ప్లాట్ గ్రామం</string>
+    <string name="landmark">ఆనవాళ్లు</string>
+    <string name="serviceTypes">సేవా రకాలు</string>
+    <string name="close">మూసివేయండి</string>
+    <string name="entervalidDates">తేదీ నుండి కంటే తేదీ వరకు తక్కువగా ఉండాలి</string>
+    <string name="otp_desc">మీ రిజిస్టర్డ్ మొబైల్ నంబర్(ల)కు పంపిన 6 అంకెల కోడ్‌ను నమోదు చేయండి</string>
+    <string name="ente_pin">దయచేసి ఓటిపి నమోదు చేయండి</string>
+    <string name="name">పేరు</string>
+    <string name="syncWarning">సమకాలీకరణ పురోగతిలో ఉన్నప్పుడు దయచేసి అనువర్తనాన్ని మూసివేయవద్దు</string>
+    <string name="showSyncInfo">సమకాలీకరణ సమాచారాన్ని చూపించు</string>
+    <string name="totalRequests">మొత్తం అభ్యర్థనలు</string>
+    <string name="pending">పెండింగ్</string>
+    <string name="enterPin">పిన్ నమోదు చేయండి</string>
+    <string name="entervalidPin">దయచేసి చెల్లుబాటు అయ్యే పిన్ను నమోదు చేయండి</string>
+    <string name="selectDates">దయచేసి తేదీని ఎంచుకోండి</string>
+    <string name="jobDoneDategreaterthanAssignedDate">ఉద్యోగం పూర్తయిన తేదీ కేటాయించిన తేదీ కాంటేఎక్కువ లేదా సమానంగా ఉండాలి</string>
+    <string name="recordupdatestatus">అభ్యర్థన విజయవంతంగా నవీకరించబడింది</string>
+
+    <string name="tressCount">
+చెట్ల సంఖ్య
+ ఖాళీగా లేదు మరియు 0 కంటే ఎక్కువగా ఉండాలి</string>
+
+    <string name="str_pin_1">పిన్<font color="#ff0000">
+<bold>*</bold></font> </string>
+
+
+
+    <string name="str_jobdoneDate">ఉద్యోగం పూర్తయిన తేదీ<font color="#ff0000">
+<bold>*</bold></font></string>
+    <string name="bunch_count">పుష్పగుచ్ఛాలు అంచనా సంఖ్య</string>
+    <string name="Weight">బరువు</string>
+    <string name="enter_bunch"> అంచనా పుష్పగుచ్ఛాలను నమోదు చేయండి</string>
+    <string name="enter_weight">బరువును నమోదు చేయండి</string>
+    <string name="entertrees">చెట్ల సంఖ్యను నమోదు చేయండి</string>
+    <string name="totaltreeCount">మొత్తం చెట్ల సంఖ్య</string>
+    <string name="Labours">కార్మికుల</string>
+    <string name="rollname">రోల్ పేరు</string>
+    <string name="Cluster_name">క్లస్టర్ పేరు</string>
+    <string name="expected_bunches">ఊహించినది పుష్పగుచ్ఛాలు</string>
+    <string name="bunch_countt">బంచ్స్ కౌంట్</string>
+    <string name="weight">బరువు</string>
+    <string name="updated_data">మొత్తం డేటా నవీకరించబడింది</string>
+    <string name="reset_data">దయచేసి మొత్తం డేటాను రీసెట్ చేయండి</string>
+    <string name="All_updated">అన్నీ నవీకరించబడ్డాయి</string>
+    <string name="version">డేటాబేస్ వెర్షన్: 1.0</string>
+    <string name="App_version" >అప్లికేషన్ వెర్షన్: </string>
+</resources>

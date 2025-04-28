@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".fragments.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeToRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_8dp"
+        android:layout_marginRight="@dimen/_8dp">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hind_regular"
+                        android:gravity="center"
+                        android:text="@string/lastSync"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_small" />
+
+                    <TextView
+                        android:id="@+id/txt_lastSync"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:fontFamily="@font/hind_regular"
+                        android:gravity="center"
+                        android:text="@string/pendingSync"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_small" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/syncinfo"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal"
+                android:padding="3dp"
+                android:weightSum="1">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="0.5"
+                    android:elevation="@dimen/_8dp"
+                    app:cardCornerRadius="5dp">
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="2.5dp"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dp"
+                            android:fontFamily="@font/hind_regular"
+                            android:text="@string/frwdSync"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_small" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0.8dp"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:background="@drawable/line_bg" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:orientation="horizontal"
+android:visibility="gone"
+                            android:weightSum="1">
+
+                            <TextView
+
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.7"
+                                android:fontFamily="@font/hind_regular"
+                                android:text="@string/requestHeader"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_small" />
+
+                            <TextView
+                                android:id="@+id/txt_requestHeader_count"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.3"
+                                android:fontFamily="@font/hind_regular"
+                                android:text="00"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_small" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0.3dp"
+                            android:background="@drawable/line_bg2" />
+
+                        <ImageButton
+                            android:id="@+id/img_f_sync"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@color/transparent"
+                            android:padding="@dimen/margin_5"
+                            android:src="@drawable/ic_r_sync" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:elevation="@dimen/_8dp"
+                    app:cardCornerRadius="5dp">
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="2.5dp"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dp"
+                            android:fontFamily="@font/hind_regular"
+                            android:text="@string/rvrseSync"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_small" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0.8dp"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:background="@drawable/line_bg" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:orientation="horizontal"
+                            android:visibility="gone"
+                            android:weightSum="1">
+
+                            <TextView
+
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.7"
+                                android:fontFamily="@font/hind_regular"
+                                android:text="Pending Requests"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_small" />
+
+                            <TextView
+                                android:id="@+id/txt_pending_sync_count"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.3"
+                                android:fontFamily="@font/hind_regular"
+                                android:text=": 0"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_small" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0.3dp"
+                            android:background="@drawable/line_bg2" />
+
+                        <ImageButton
+                            android:id="@+id/img_r_sync"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@color/transparent"
+                            android:padding="@dimen/margin_5"
+                            android:src="@drawable/ic_r_sync" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <!--            <com.skyhope.eventcalenderlibrary.CalenderEvent-->
+
+            <!--                android:id="@+id/calender_event"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="match_parent"-->
+            <!--                android:layout_marginLeft="@dimen/margin_15"-->
+            <!--                android:layout_marginTop="3dp"-->
+            <!--                android:layout_marginRight="@dimen/margin_15"-->
+            <!--                app:selector_color="@color/colorOrange_head" />-->
+
+            <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/main_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:animateLayoutChanges="true">
+
+                <LinearLayout
+                    android:id="@+id/calender_scroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <ImageButton
+                        android:id="@+id/prev_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/month_title"
+                        android:layout_alignParentLeft="true"
+                        android:layout_weight="0.2"
+                        android:src="@drawable/ic_arrow_left"
+                        android:text="@string/scrollLeft" />
+
+                    <TextView
+                        android:id="@+id/month_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:fontFamily="@font/hind_regular"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+
+                    <ImageButton
+                        android:id="@+id/next_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/month_title"
+                        android:layout_alignParentRight="true"
+                        android:layout_weight="0.2"
+                        android:src="@drawable/ic_arrow_right"
+                        android:text="@string/scrollRight" />
+                </LinearLayout>
+
+                <com.github.sundeepk.compactcalendarview.CompactCalendarView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/compactcalendar_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="200dp"
+                    android:layout_below="@id/calender_scroll"
+                    app:compactCalendarBackgroundColor="@color/white"
+                    app:compactCalendarCurrentDayBackgroundColor="@color/colorOrange"
+                    app:compactCalendarCurrentDayIndicatorStyle="fill_large_indicator"
+                    app:compactCalendarCurrentSelectedDayBackgroundColor="@color/colorOrange2"
+                    app:compactCalendarEventIndicatorStyle="small_indicator"
+                    app:compactCalendarOtherMonthDaysTextColor="#534c4c"
+                    app:compactCalendarShouldSelectFirstDayOfMonthOnScroll="true"
+                    app:compactCalendarTextColor="@color/black"
+                    app:compactCalendarTextSize="14sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/event_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/compactcalendar_view" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+    <TextView
+        android:fontFamily="@font/hind_regular"
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="200dp"
+        android:gravity="center"
+        android:text="@string/noDataAvailable"
+        android:textStyle="bold" />
+
+</FrameLayout>

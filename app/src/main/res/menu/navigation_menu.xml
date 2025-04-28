@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:fontFamily="@font/hind_regular"
+        android:id="@+id/action_home"
+        android:enabled="true"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home"
+        />
+    <item
+        android:fontFamily="@font/hind_regular"
+        android:id="@+id/languageTitle"
+        android:enabled="true"
+        android:icon="@drawable/ic_lang"
+        android:title="@string/chooselanguage"/>
+
+    <item
+        android:fontFamily="@font/hind_regular"
+        android:id="@+id/action_profile"
+        android:enabled="true"
+        android:icon="@drawable/ic_myprofile"
+        android:title="@string/profile" />
+<!--    <item-->
+<!--        android:id="@+id/My_request"-->
+<!--        android:enabled="true"-->
+<!--        android:icon="@drawable/ic_request"-->
+<!--        android:title="@string/requests"-->
+<!--        />-->
+<!--    <item-->
+<!--        android:id="@+id/action_3f"-->
+<!--        android:enabled="true"-->
+<!--        android:icon="@drawable/ic_my"-->
+<!--        android:title="@string/my3F"-->
+<!--        />-->
+
+    <item
+android:visible="false"
+        android:fontFamily="@font/hind_regular"
+        android:enabled="true"
+        android:icon="@drawable/ic_logout"
+        android:title="@string/log_off"
+        android:id="@+id/nav_logout"/>
+</menu>
