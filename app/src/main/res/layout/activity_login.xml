@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -5,14 +6,13 @@
     android:layout_height="match_parent"
     android:layout_weight="1"
     android:orientation="vertical"
-
     tools:context="in.calibrage.palmharvest.Activities.LoginActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/appbg"
-        android:foreground="@color/half_black2" />
+        android:background="@drawable/farmer_app_login"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,64 +20,48 @@
         android:layout_centerVertical="true"
         android:orientation="vertical">
 
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_gravity="center"
-            android:scaleType="fitCenter"
-            android:src="@drawable/ic_user" />
-
-        <TextView
-            android:fontFamily="@font/hind_regular"
-            android:layout_width="match_parent"
+        <!-- Logo -->
+        <RelativeLayout
+            android:id="@+id/logoLayout"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
-            android:text="@string/FA_login"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="25dp" />
+            android:layout_gravity="center"
+            android:background="@drawable/palm_harvest"/>
+
 
         <EditText
-            android:fontFamily="@font/hind_regular"
             android:id="@+id/username_edittxt"
+            android:textAllCaps="true"
+            style="@style/editTxt_normal"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="50dp"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
-            android:background="@drawable/edt_bg"
-            android:hint="@string/user_name"
-            android:inputType="textPersonName"
-            android:maxEms="30"
-            android:maxLength="30"
-            android:maxLines="1"
             android:paddingLeft="5dp"
-            android:singleLine="true"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textColorHint="@color/light_gray2"
-            android:textSize="20dp" />
+            android:fontFamily="@font/hind_semibold"
+            android:hint="@string/user_name"
+            android:text=""
+            android:maxEms="50"
+            android:maxLength="20"
+            android:maxLines="1"/>
 
 
         <EditText
             android:id="@+id/password_edittxt"
+            android:textAllCaps="true"
+            style="@style/editTxt_normal"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="50dp"
             android:layout_marginLeft="15dp"
-            android:layout_marginTop="@dimen/margin_10"
             android:layout_marginRight="15dp"
-            android:background="@drawable/edt_bg"
-            android:hint="@string/password"
-            android:inputType="textPassword"
-            android:maxEms="50"
-            android:maxLines="1"
             android:paddingLeft="5dp"
-            android:fontFamily="@font/hind_regular"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textColorHint="@color/light_gray2"
-            android:textSize="20dp"
+            android:fontFamily="@font/hind_semibold"
+            android:hint="@string/user_name"
+            android:text=""
+            android:maxEms="50"
+            android:maxLength="20"
+            android:maxLines="1"
             android:visibility="gone" />
-
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -99,12 +83,17 @@
 
                 <Button
                     android:id="@+id/loginBtn"
-                    style="@style/Common_Button"
+                    style="@style/basicBtnStyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="center"
                     android:text="@string/login" />
+
 
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
+
 </RelativeLayout>

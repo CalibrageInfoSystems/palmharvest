@@ -2,12 +2,12 @@ package in.calibrage.palmharvest.service;
 
 public interface APIConstantURL {
 
- public static  final  String LOCAL_URL="https://3fakshaya.com/api/";
-//public static  final  String LOCAL_URL="http://103.241.144.240:9096/api/";
-    //   public static  final String LOCAL_URL="http://3.108.135.34/3FAkshaya/API/api/"; //LIVe
-//public static  final String LOCAL_URL="http://182.18.157.215/3FAkshaya/API/api/";//test local
-//public static  final  String LOCAL_URL="http://183.82.111.111/3FFarmerAPI/api/";
- //public static  final  String LOCAL_URL="http://103.241.144.240:9098/api/";
+// public static  final  String LOCAL_URL="https://3fakshaya.com/api/";
+// public static  final  String LOCAL_URL="http://103.241.144.240:9096/api/";
+// public static  final String LOCAL_URL="http://3.108.135.34/3FAkshaya/API/api/"; //LIVe
+ public static  final String LOCAL_URL="http://182.18.157.215/3FAkshaya/API/api/";//test local
+// public static  final  String LOCAL_URL="http://183.82.111.111/3FFarmerAPI/api/";
+// public static  final  String LOCAL_URL="http://103.241.144.240:9098/api/";
         String Login = "User/Login";
         String GetCount = "Sync/GetCount";
         String post_syncLabourRequests = "Sync/SyncLabourRequests";

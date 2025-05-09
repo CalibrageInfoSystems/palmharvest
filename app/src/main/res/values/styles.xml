@@ -60,4 +60,22 @@
         <item name="android:fontFamily">@font/hind_regular</item>
         <item name="android:textSize">@dimen/font_reguler</item>
     </style>
+
+
+    <style name="basicBtnStyle">
+        <item name="android:background">@drawable/btn_stateful</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+
+    <style name="editTxt_normal">
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@drawable/app_edittext</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+
 </resources>
