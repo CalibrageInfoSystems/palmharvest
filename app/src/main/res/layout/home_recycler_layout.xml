@@ -1,458 +1,203 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    card_view:cardCornerRadius="12dp"
+    card_view:cardElevation="4dp"
+    android:layout_margin="8dp"
+    android:background="@android:color/white">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/card_view"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        card_view:cardUseCompatPadding="true"
-        card_view:cardElevation="2dp"
-        card_view:cardCornerRadius="8dp">
+        android:orientation="vertical"
+        android:padding="16dp">
 
+        <!-- Header: Icon, Request Code, Date -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/map_icon"
+                android:background="@drawable/map_icon_bg"
+                android:tint="@color/orange" />
+
+            <TextView
+                android:id="@+id/requestCode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_marginStart="8dp" />
+
+            <TextView
+                android:id="@+id/startDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#A0A0A0"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Details -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:id="@+id/labour_request"
-            android:padding="10dp">
+            android:layout_marginBottom="12dp">
 
             <LinearLayout
-                android:orientation="horizontal"
-                android:weightSum="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:visibility="gone">
-                <TextView
-                    android:layout_weight="0.3"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="@string/id"
-                    android:textStyle="bold"/>
-                <TextView
-                    android:id="@+id/id"
-                    android:layout_weight="0.7"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp" />
-            </LinearLayout>
+                android:layout_marginBottom="5dp"
+                android:weightSum="1">
 
-            <LinearLayout
-                android:orientation="horizontal"
-                android:weightSum="1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
                 <TextView
-                    android:layout_weight="0.3"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="@string/requestCode"
-                    android:textStyle="bold"/>
-                <TextView
-                    android:id="@+id/requestCode"
-                    android:layout_weight="0.7"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp" />
-            </LinearLayout>
 
-            <LinearLayout
-                android:orientation="horizontal"
-                android:weightSum="1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_weight="0.3"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="@string/startDate"
-                    android:textStyle="bold"/>
-                <TextView
-                    android:id="@+id/startDate"
-                    android:layout_weight="0.7"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:weightSum="1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:visibility="gone">
-                <TextView
-                    android:layout_weight="0.3"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="@string/duarationId"
-                    android:textStyle="bold"/>
-                <TextView
-                    android:id="@+id/durationId"
-                    android:layout_weight="0.7"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:weightSum="1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:visibility="gone">
-                <TextView
-                    android:layout_weight="0.3"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="@string/leaderId"
-                    android:textStyle="bold"/>
-                <TextView
-                    android:id="@+id/leaderId"
-                    android:layout_weight="0.7"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:weightSum="1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:visibility="gone">
-                <TextView
-                    android:layout_weight="0.3"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="@string/PIN"
-                    android:textStyle="bold"/>
-                <TextView
-                    android:id="@+id/pin"
-                    android:layout_weight="0.7"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:weightSum="1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:visibility="gone">
-                <TextView
-                    android:layout_weight="0.3"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="@string/jobDD"
-                    android:textStyle="bold"/>
-                <TextView
-                    android:id="@+id/jobDoneDate"
-                    android:layout_weight="0.7"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:weightSum="1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:visibility="gone">
-                <TextView
-                    android:layout_weight="0.3"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="@string/createdByUserId"
-                    android:textStyle="bold"/>
-                <TextView
-                    android:id="@+id/createdByUserId"
-                    android:layout_weight="0.7"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp" />
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:weightSum="1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:visibility="gone">
-                <TextView
-                    android:layout_weight="0.3"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="@string/createdDate"
-                    android:textStyle="bold"/>
-                <TextView
-                    android:id="@+id/createdDate"
-                    android:layout_weight="0.7"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:weightSum="1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:visibility="gone">
-                <TextView
-                    android:layout_weight="0.3"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="@string/updatedByUserId"
-                    android:textStyle="bold"/>
-                <TextView
-                    android:id="@+id/updatedUserId"
-                    android:layout_weight="0.7"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:weightSum="1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:visibility="gone">
-                <TextView
-                    android:layout_weight="0.3"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="@string/updatedDate"
-                    android:textStyle="bold"/>
-                <TextView
-                    android:id="@+id/updatedDate"
-                    android:layout_weight="0.7"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:weightSum="1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_weight="0.3"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
                     android:text="@string/assignedDate"
-                    android:textStyle="bold"/>
+                    android:textColor="#808080"
+                    android:layout_weight="0.4"
+                    android:textSize="13sp"  />
                 <TextView
                     android:id="@+id/assignedDate"
-                    android:layout_weight="0.7"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp" />
+                    android:layout_weight="0.6"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
             </LinearLayout>
 
+
             <LinearLayout
-                android:orientation="horizontal"
-                android:weightSum="1"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:weightSum="1">
                 <TextView
-                    android:layout_weight="0.3"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
                     android:text="@string/netWeight"
-                    android:textStyle="bold"/>
+                    android:textColor="#808080"
+                    android:layout_weight="0.4"
+                    android:textSize="13sp" />
                 <TextView
                     android:id="@+id/netWeight"
-                    android:layout_weight="0.7"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    />
+                    android:text=""
+                    android:textColor="#00AA55"
+                    android:layout_weight="0.6"
+                    android:textSize="14sp" />
             </LinearLayout>
 
             <LinearLayout
-                android:orientation="horizontal"
-                android:weightSum="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                >
+                android:layout_marginBottom="5dp"
+                android:weightSum="1">
                 <TextView
-                    android:layout_weight="0.3"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
                     android:text="@string/amount"
-                    android:textStyle="bold"/>
+                    android:textColor="#808080"
+                    android:layout_weight="0.4"
+                    android:textSize="13sp" />
                 <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
                     android:id="@+id/amount"
-                    android:layout_weight="0.7"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp" />
+                    android:text=""
+                    android:layout_weight="0.6"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
             </LinearLayout>
 
             <LinearLayout
-                android:orientation="horizontal"
-                android:weightSum="1"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:weightSum="1">
                 <TextView
-                    android:layout_weight="0.3"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
                     android:text="@string/harvestingAmount"
-                    android:textStyle="bold"/>
+                    android:textColor="#808080"
+                    android:layout_weight="0.4"
+                    android:textSize="13sp" />
                 <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
                     android:id="@+id/harvestingAmount"
-                    android:layout_weight="0.7"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp" />
+                    android:text=""
+                    android:textColor="#000000"
+                    android:layout_weight="0.6"
+                    android:textSize="14sp"/>
             </LinearLayout>
 
             <LinearLayout
-                android:orientation="horizontal"
-                android:weightSum="1"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:weightSum="1">
                 <TextView
-                    android:layout_weight="0.3"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
                     android:text="@string/pruningAmount"
-                    android:textStyle="bold"/>
+                    android:layout_weight="0.4"
+                    android:textColor="#808080"
+                    android:textSize="13sp" />
+
                 <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
                     android:id="@+id/pruningAmount"
-                    android:layout_weight="0.7"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp" />
+                    android:layout_weight="0.6"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
             </LinearLayout>
 
-            <LinearLayout
-                android:orientation="horizontal"
-                android:weightSum="1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:visibility="gone">
-                <TextView
-                    android:layout_weight="0.3"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="@string/unknown1Amount"
-                    android:textStyle="bold"/>
-                <TextView
-                    android:id="@+id/unknown1Amount"
-                    android:layout_weight="0.7"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:weightSum="1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:visibility="gone">
-                <TextView
-                    android:layout_weight="0.3"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="@string/unknown2Amount"
-                    android:textStyle="bold"/>
-                <TextView
-                    android:id="@+id/unknown2Amount"
-                    android:layout_weight="0.7"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:weightSum="1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:visibility="gone">
-                <TextView
-                    android:layout_weight="0.3"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="@string/treeCount"
-                    android:textStyle="bold"/>
-                <TextView
-                    android:id="@+id/tressCount"
-                    android:layout_weight="0.7"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:weightSum="1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:visibility="gone">
-                <TextView
-                    android:layout_weight="0.3"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="Server Updated Status"
-                    android:textStyle="bold"/>
-                <TextView
-                    android:id="@+id/serverUpdatedStatus"
-                    android:layout_weight="0.7"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="2019"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="right">
-
-                <Button
-                    android:id="@+id/close_request_btn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/jobDone"
-                    android:textSize="14sp"
-                    android:textStyle="bold"
-                    style="@style/Common_Button"/>
-
-            </LinearLayout>
         </LinearLayout>
-    </androidx.cardview.widget.CardView>
-</LinearLayout>
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_view_details"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="View Details"
+                android:textColor="@color/orange"
+                android:backgroundTint="#FFF6F0"
+                android:background="@drawable/button_outline_orange" />
+
+            <Button
+                android:id="@+id/close_request_btn"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="Job Done"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/orange" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
